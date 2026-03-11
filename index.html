@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibalikhulu Thatchers | Master Thatching Services</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Sibalikhulu Thatchers</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Expert Thatching Solutions</h1>
+                <p>Quality craftsmanship, traditional techniques, and modern durability. We bring your outdoor spaces to life.</p>
+                <a href="contact.html" class="btn">Get a Free Quote</a>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Welcome to Sibalikhulu Thatchers</h2>
+            <p>We specialize in building and maintaining high-quality thatched roofs, lapas, gazebos, and traditional rondavels. With years of experience, our team guarantees exceptional workmanship that stands the test of time.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sibalikhulu Thatchers. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Burger Menu Toggle Script
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
