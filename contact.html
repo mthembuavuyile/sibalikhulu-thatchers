@@ -1,70 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Sibalikhulu Thatchers</title>
-    <link rel="stylesheet" href="css/shared.css">
-    <link rel="stylesheet" href="css/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Sibalikhulu Thatchers</title>
+  <meta name="description" content="Get in touch with Sibalikhulu Thatchers for a free quote on rondavels, lapas, gazebos, and thatched structures in KwaZulu-Natal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Sibalikhulu Thatchers</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+  <main>
+
+    <section class="contact-wrap">
+      <div class="contact-info">
+        <p class="section-label">Let's Talk</p>
+        <h1>Get In Touch</h1>
+        <p class="contact-intro">Ready to start your thatching project? Reach out for a free consultation and no-obligation quote.</p>
+
+        <ul class="contact-details">
+          <li>
+            <span class="detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.17-.93a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            </span>
+            <div>
+              <strong>Phone</strong>
+              <span>+27 (0) 00 000 0000</span>
             </div>
-        </nav>
-    </header>
+          </li>
+          <li>
+            <span class="detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div>
+              <strong>Email</strong>
+              <span>info@sibalikhuluthatchers.co.za</span>
+            </div>
+          </li>
+          <li>
+            <span class="detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <strong>Location</strong>
+              <span>KwaZulu-Natal, South Africa</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <main class="contact-container">
-        <div class="contact-info">
-            <h2>Get In Touch</h2>
-            <p>Ready to start your thatching project? Contact us today for a consultation and free quote.</p>
-            <ul>
-                <li><strong>Phone:</strong> +27 (0) 00 000 0000</li>
-                <li><strong>Email:</strong> info@sibalikhuluthatchers.co.za</li>
-                <li><strong>Location:</strong> KwaZulu-Natal, South Africa</li>
-            </ul>
-        </div>
-        
-        <div class="contact-form">
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message / Project Details</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </main>
+      <div class="contact-form-wrap">
+        <form class="contact-form" action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+27 00 000 0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service…</option>
+              <option>Rondavel Construction</option>
+              <option>Lapa / Gazebo</option>
+              <option>New Build</option>
+              <option>Maintenance &amp; Repairs</option>
+              <option>Lodge / Commercial</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message / Project Details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Sibalikhulu Thatchers. All Rights Reserved.</p>
-    </footer>
+  </main>
 
-    <script>
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('toggle');
-        });
-    </script>
+  <script src="js/layout.js"></script>
 </body>
 </html>
