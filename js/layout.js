@@ -23,9 +23,11 @@
 
   function buildFooter() {
     const year = new Date().getFullYear();
-    const navItems = NAV_LINKS.map(l =>
-      `<li><a href="${l.href}">${l.label}</a></li>`
-    ).join('');
+    
+    // Deduplicated navigation mapping
+    const navItems = NAV_LINKS
+        .map(({ href, label }) => `<li><a href="${href}">${label}</a></li>`)
+        .join('');
 
     return `
       <div class="footer-inner">
@@ -33,21 +35,27 @@
           <h4>Sibalikhulu Thatchers</h4>
           <p>Masters of traditional and modern thatching. We bring quality, durability, and character to every outdoor space we touch.</p>
         </div>
+        
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul>${navItems}</ul>
         </div>
+        
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>KwaZulu-Natal, South Africa<br>
-             +27 (0) 00 000 0000<br>
-             info@sibalikhuluthatchers.co.za</p>
+          <p>
+            KwaZulu-Natal, South Africa<br>
+            +27 70 704 9514<br>
+            <a href="mailto:sibalikhuluthatchers@gmail.com">sibalikhuluthatchers@gmail.com</a>
+          </p>
         </div>
       </div>
+
       <div class="footer-bottom">
-        &copy; ${year} Sibalikhulu Thatchers. All Rights Reserved.
+        <p>&copy; ${year} Sibalikhulu Thatchers. All Rights Reserved.</p>
+        <p>Developed by <a href="https://vylex.co.za" target="_blank" rel="noopener">Vylex</a></p>
       </div>`;
-  }
+}
 
   /* ── Inject ─────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
